@@ -3,7 +3,7 @@ import crypto from "crypto";
 import { useEffect, useState } from "react";
 import { TelegramWebApps } from "telegram-webapps-types";
 const verifyTelegramWebappData = (telegramInitData: string) => {
-  const botToken = "";
+  const botToken = "8167236367:AAHTTBynamHoPvZseEoaGsJMtBAU9xDWk3E";
   const encoded = decodeURIComponent(telegramInitData);
   const secret = crypto.createHmac("sha256", "WebAppData").update(botToken);
   const arr = encoded.split("&");
